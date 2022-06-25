@@ -9,6 +9,8 @@ zap 是 Go 中一个快速，结构化，分级日志库。但是 zap 本身不�
 ### 1. 简单使用
 
 ```
+import "github.com/noahyzhang/zlog"
+
 func simpleExample() {
     zlog.Info("This is a info log")
 }
@@ -17,6 +19,11 @@ func simpleExample() {
 ### 二、高级使用
 
 ```
+import (
+    "github.com/noahyzhang/zlog"
+    "github.com/noahyzhang/zlog/config"
+)
+
 func complexExample() {
     c := config.Config{
         CallerSkip: 2,
