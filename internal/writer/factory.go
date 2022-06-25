@@ -1,9 +1,9 @@
 package writer
 
 import (
+    "github.com/noahyzhang/zlog/config"
     "go.uber.org/zap"
     "go.uber.org/zap/zapcore"
-    "zylog/internal/config"
 )
 
 var (

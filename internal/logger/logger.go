@@ -1,7 +1,7 @@
 package logger
 
 import (
-    "zylog/internal/config"
+    "github.com/noahyzhang/zlog/config"
 )
 
 // Field is the user defined log field

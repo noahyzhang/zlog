@@ -1,9 +1,9 @@
-package zylog
+package zlog
 
 import (
-    "zylog/internal/config"
-    "zylog/internal/logger"
-    "zylog/internal/writer"
+    "github.com/noahyzhang/zlog/config"
+    "github.com/noahyzhang/zlog/internal/logger"
+    "github.com/noahyzhang/zlog/internal/writer"
 )
 
 // SetLoggerConfig set logger of use our config

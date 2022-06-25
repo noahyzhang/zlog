@@ -4,8 +4,8 @@ import (
     "fmt"
     "go.uber.org/zap"
     "go.uber.org/zap/zapcore"
-    "zylog/internal/config"
-    "zylog/internal/writer"
+    "github.com/noahyzhang/zlog/config"
+    "github.com/noahyzhang/zlog/internal/writer"
 )
 
 var DefaultConfig = config.Config{

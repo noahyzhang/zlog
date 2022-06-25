@@ -1,10 +1,10 @@
 package writer
 
 import (
+    "github.com/noahyzhang/zlog/config"
     "go.uber.org/zap"
     "go.uber.org/zap/zapcore"
     "os"
-    "zylog/internal/config"
 )
 
 // DefaultConsoleWriterFactory is the default console output implementation

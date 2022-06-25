@@ -2,8 +2,8 @@ package logger
 
 import (
     "sync"
-    "zylog/internal/config"
-    "zylog/internal/writer"
+    "github.com/noahyzhang/zlog/config"
+    "github.com/noahyzhang/zlog/internal/writer"
 )
 
 func init() {

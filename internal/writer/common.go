@@ -1,9 +1,9 @@
 package writer
 
 import (
+    "github.com/noahyzhang/zlog/config"
     "go.uber.org/zap/zapcore"
     "time"
-    "zylog/internal/config"
 )
 
 var LogLevelToZapLevel = map[config.LogLevel]zapcore.Level {

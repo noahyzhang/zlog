@@ -1,13 +1,13 @@
 package main
 
 import (
-    "zylog"
-    "zylog/internal/config"
+    "github.com/noahyzhang/zlog"
+    "github.com/noahyzhang/zlog/config"
 )
 
 // simpleExample is simple example, outputs logs to the console
 func simpleExample() {
-    zylog.Info("This is a info log")
+    zlog.Info("This is a info log")
 }
 
 // complexExample is complex example, you can control the output position of logs
@@ -35,19 +35,19 @@ func complexExample() {
                     StacktraceKey: "StackTrace",          // 日志堆栈字段名称， 不填默认"S"
                 },
                 WriterConfig: config.WriteConfig{ // 本地文件输出具体配置
-                    FileName:   "./test.log",      // 本地文件滚动日志存放的路径
+                    FileName:   "./test.log",       // 本地文件滚动日志存放的路径
                     WriteMode:  config.WriteSync,  // 日志写入模式，1-同步，2-异步，3-极速(异步丢弃), 不配置默认极速模式
                     RollType:   config.RollBySize, // 文件滚动类型,size为按大小滚动
-                    MaxAge:     7,                 // 最大日志保留天数
-                    MaxBackups: 10,                // 最大日志文件数
-                    Compress:   false,             // 日志文件是否压缩
-                    MaxSize:    10,                // 本地文件滚动日志的大小 单位 MB
+                    MaxAge:     7,                  // 最大日志保留天数
+                    MaxBackups: 10,                 // 最大日志文件数
+                    Compress:   false,              // 日志文件是否压缩
+                    MaxSize:    10,                 // 本地文件滚动日志的大小 单位 MB
                 },
             },
         },
     }
-    zylog.SetLoggerConfig(c)
-    zylog.Info("This is a info log")
+    zlog.SetLoggerConfig(c)
+    zlog.Info("This is a info log")
 }
 
 func main() {

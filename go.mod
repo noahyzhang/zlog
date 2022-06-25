@@ -1,4 +1,4 @@
-module zylog
+module github.com/noahyzhang/zlog
 
 go 1.15
 
